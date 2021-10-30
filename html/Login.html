@@ -1,0 +1,150 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Loja Virtual de Jogos</title>
+    <meta name="description" content="Loja virtual com jogos para diversão">
+    <meta name="keywords" content="XBOX, PS, PlayStation, PC, Atari">
+    <meta name="author" content="Estudantes SENAI - SBO">
+    <meta name="viewport" content="Width=device-with, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family = PT + Serif & display = swap " rel=" stylesheet ">
+    <link rel="icon" href="./img/logo.jpg" type="image/jpg" sizes="16x16">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="#"><img id="foto-logo" src="../img/logo.jpg" width="27px" height="27px"></a>
+        <a href="./inicio.html">Inicio</a>
+
+        <div class="dropdown">
+            <button class="dropbtn" onclick="menu()">Jogos
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="./Consoles.html">PlayStation</a>
+                <a href="./Consoles.html">XBox</a>
+                <a href="./Consoles.html">Nnintendo</a>
+            </div>
+        </div>
+        <a href="../html/Consoles.html">Consoles</a>
+        <a href="./Login.html">Login</a>
+        <a href="./Contato.html">Contato</a>
+    </div>
+
+    <br>
+
+    <label class="ainda-nao-tenho-cadastro">Ainda Não Tenho Cadastrado</label>
+
+
+    <div class="container">
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text" id="nomeid" />
+
+            <label for="email">Email</label>
+            <input type="email" name="email" />
+
+            <label for="idade">Idade</label>
+            <input type="number" name="idade" min="12" step="1" />
+
+            <label for="data de nascimento">Data de Nascimento</label>
+            <input type="date" name="data de nascimento" />
+
+
+            <label>onde vc possue conta:
+                <div>
+                    <label class="social-network"><input type="checkbox" name="instagram">Instagram</label>
+            <label class="social-network"><input type="checkbox" name="facebook">Facebook</label>
+            <label class="social-network"><input type="checkbox" name="youtube">Youtube</label>
+    </div>
+    </label>
+
+    <label>sexo
+                <div>
+                    <label class="sexo-box">
+                        <input type="radio" name="genero" value="masculino" />
+                        masculino
+
+                    </label>
+    <label class="sexo-box">
+                        <input type="radio" name="genero" value="feminino" />
+                        feminino
+                    </label>
+    </div>
+    </label>
+
+    <label>biografia
+                <textarea name="bio" placeholder="Sugestão..."></textarea>
+            </label>
+
+
+    <label>Foto de Perfil
+                <input class=" photo-profile" type="file" name="arquivo" accept="images/*">
+            </label>
+
+    <label>Telefone </label>
+    <input type="tel" name="telefone" />
+
+    <label>Link do perfil</label>
+    <input type="url" name="url" />
+
+    <label>Senha</label>
+    <input class="password-box" type="password" name="senha" min="6" max="8" />
+
+    <input type="submit" class="submit-box" onclick="enviar();" value="Enviar" />
+
+    </form>
+
+    </div>
+
+
+    <label class="texto-ja-sou-cadastrado">Ja Sou Cadastrado</label>
+    <div class="ja-sou-cadastrado">
+        <form>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="emailid" />
+
+            <label for="senha">Senha</label>
+            <input placeholder="********" type="password" id="senhaid" name="senha" min="6" max="8">
+            <br>
+            <input type="submit" class="submit-box" onclick="entrar();" value="Entrar" />
+
+        </form>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+    <footer>
+
+        <br>
+
+        <div class="texto-rodape">
+            <p>Games Ltda</p>
+            <p>Desenvolvido por Willian</p>
+
+
+            <a href="https://www.youtube.com/"><img src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/50/000000/external-youtube-multimedia-prettycons-lineal-color-prettycons.png" height="30px" width="30px" /></a>
+            <a href="https://www.whatsapp.com/?lang=pt_br"><img src="https://img.icons8.com/color/48/000000/whatsapp--v2.png" height="30px" width="30px" /></a>
+            <a href="https://www.facebook.com/"><img src="https://img.icons8.com/color/48/000000/facebook-new.png" height="30px" width="30px" /></a>
+            <a href="https://www.instagram.com/"><img src="https://img.icons8.com/fluency/24/000000/instagram-new.png" height="30px" width="30px" /></a>
+            <a href="https://www.google.com.br/maps/preview"><img src="https://img.icons8.com/ios-filled/50/000000/google-maps.png" height="30px" width="30px" /></a>
+            <a href="https://www.telefonica.com.br/"><img src="https://img.icons8.com/material-outlined/24/000000/no-phones--v2.png" height="30px" width="30px" /></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox"><img src="https://img.icons8.com/glyph-neue/64/000000/secured-letter.png" height="30px" width="30px" /></a>
+
+        </div>
+    </footer>
+
+</body>
+
+<script type="text/javascript" src="../javascript/scripts.js"></script>
+
+</html>

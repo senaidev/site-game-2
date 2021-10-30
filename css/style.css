@@ -1,0 +1,195 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0 20px 0 20px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.texto-ofertas {
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(178, 187, 187);
+}
+
+.texto-rodape {
+    text-align: center;
+}
+
+.foto-coluna4 {
+    margin: 35px 15px 35px 15px;
+}
+
+#foto-logo {
+    margin-left: -36px;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 300px;
+    top: 8px;
+    background-color: white;
+    padding: 0px 1px;
+}
+
+.container {
+    padding: 10px;
+    margin-right: 1000px;
+    background-color: rgb(214, 216, 214);
+    border-radius: 20px;
+}
+
+.ainda-nao-tenho-cadastro {
+    padding: 10px 40px;
+}
+
+.registration-box {
+    position: absolute;
+    font-size: 16px;
+    font-weight: 300px;
+    top: -6px;
+    background-color: white;
+    padding: 0 3px;
+}
+
+label {
+    display: block;
+    color: black;
+    font-size: 20px;
+}
+
+input {
+    margin-bottom: 20px;
+    border: black;
+}
+
+.social-network {
+    display: inline;
+}
+
+.sexo-box {
+    display: inline;
+}
+
+textarea {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.photo-profile {
+    display: block;
+    font-size: 13px;
+}
+
+.tel-box {
+    display: block;
+}
+
+.link-box {
+    display: block;
+}
+
+.password-box {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+.reset-box:hover {
+    background-color: rgb(179, 180, 179);
+    width: 50px;
+    height: 40px;
+    color: black;
+    border-radius: 5px;
+}
+
+.submit-box:hover {
+    background-color: rgb(179, 180, 179);
+    width: 80px;
+    height: 40px;
+    color: black;
+    border-radius: 5px;
+}
+
+.ja-sou-cadastrado {
+    margin-left: 500px;
+    position: absolute;
+    background-color: rgb(214, 216, 214);
+    padding: 10px 20px;
+    margin-top: -740px;
+    border-radius: 20px;
+}
+
+.texto-ja-sou-cadastrado {
+    margin-left: 500px;
+    position: absolute;
+    padding: 10px 20px;
+    margin-top: -785px;
+    display: block;
+    color: black;
+    font-size: 20px;
+}
+
+.texto-jogos {
+    text-align: center;
+    font-size: 25px;
+}
