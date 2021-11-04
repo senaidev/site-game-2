@@ -1,3 +1,5 @@
+/*barra de navegação*/
+
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -12,6 +14,30 @@
     padding: 14px 16px;
     text-decoration: none;
     margin: 0 20px 0 20px;
+}
+
+#foto-logo {
+    margin-left: -36px;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 300px;
+    top: 8px;
+    background-color: white;
+    padding: 0px 1px;
+    object-fit: cover;
+}
+
+.input-pag-um {
+    margin: 15px 0 15px 300px;
+    border-radius: 4px;
+}
+
+.button-pag-um {
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: green;
 }
 
 .dropdown {
@@ -63,9 +89,17 @@
     display: block;
 }
 
+
+/*texto da pagina*/
+
 .texto-ofertas {
     text-align: center;
+    text-decoration: underline;
+    font-size: 25px;
 }
+
+
+/*final pagina*/
 
 footer {
     background-color: rgb(178, 187, 187);
@@ -73,21 +107,25 @@ footer {
 
 .texto-rodape {
     text-align: center;
+    padding: 1px;
 }
+
+
+/*fotos da pagina*/
 
 .foto-coluna4 {
-    margin: 35px 15px 35px 15px;
+    margin: 25px;
+    height: 25%;
 }
 
-#foto-logo {
-    margin-left: -36px;
-    position: absolute;
-    font-size: 16px;
-    font-weight: 300px;
-    top: 8px;
-    background-color: white;
-    padding: 0px 1px;
+.foto-coluna4:hover {
+    border-radius: 5px;
+    transition: all .2s;
+    transform: scale(1.4);
 }
+
+
+/*formulario*/
 
 .container {
     padding: 10px;
@@ -189,7 +227,127 @@ button {
     font-size: 20px;
 }
 
-.texto-jogos {
+
+/*flip*/
+
+#panel,
+#flip {
+    padding: 5px;
     text-align: center;
-    font-size: 25px;
+    border: solid 1px rgb(42, 40, 61);
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(197, 14, 30);
+}
+
+#panel {
+    padding: 10px;
+    display: none;
+}
+
+
+/* carrossel*/
+
+* {
+    box-sizing: border-box
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.imagem-principal {
+    width: 1333px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(93, 253, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: rgb(187, 187, 187);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #ec0808;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }

@@ -11,8 +11,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2? family = PT + Serif & display = swap " rel=" stylesheet ">
-    <link rel="icon" href="./img/logo.jpg" type="image/jpg" sizes="16x16">
+    <link rel="icon" href="../img/logo.jpg" type="image/jpg" sizes="16x16">
     <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="../javascript/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#flip").click(function() {
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+
 </head>
 
 <body>
@@ -23,58 +33,105 @@
 
         <div class="dropdown">
             <button class="dropbtn" onclick="menu()">Jogos
-                                <i class="fa fa-caret-down"></i>
-                        </button>
+                <i class="fa fa-caret-down"></i>
+            </button>
             <div class="dropdown-content" id="myDropdown">
                 <a href="../html/Jogos.html">PlayStation</a>
                 <a href="../html/Jogos.html">XBox</a>
-                <a href="../html/Jogos.html">Nnintendo</a>
+                <a href="../html/Jogos.html">Nintendo</a>
             </div>
         </div>
 
         <a href="../html/Consoles.html">Consoles</a>
         <a href="../html/Login.html">Login</a>
         <a href="../html/Contato.html">Contato</a>
+        <input class="input-pag-um" type="text" />
+        <button type="button-pag-um">Buscar</button>
+
+    </div>
+
+    <div id="flip">Clique aqui!!!</div>
+    <div id="panel">Estamos esperando por você!
+        <br>
+        <img src="../img/jogos-de-videogame.png" style="width:25%">
     </div>
 
 
-    <img src="https://source.unsplash.com/1333x500/?ps5" class="d-block w-100" alt="...">
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <a href="./Consoles.html"><img class="imagem-principal" src="../img/xbox/Xbox-Series console.jpeg"></a>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <a href="./Consoles.html"> <img class="imagem-principal" src="../img/ps5/ps5 controle com boneco.png"></a>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <a href="./Consoles.html"> <img class="imagem-principal" src="../img/nintendo/nintendo switch console.jpg"></a>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <a href="./Consoles.html"> <img class="imagem-principal" src="../img/xbox/Xbox One X console.jpg"></a>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <br>
 
     <h1 class="texto-ofertas"> Ofertas </h1>
 
+    <br>
 
+    <a href="#"> <img class="foto-coluna4" src="../img/ps4/ps4 1.jpg" alt="..."></a>
 
-    <a href="./Carrinho.html"> <img class="foto-coluna4" src="https://source.unsplash.com/300x200/?ps5" alt="..."></a>
+    <a href="#"> <img class="foto-coluna4" src="../img/ps5/ps5 1.png" alt="..."></a>
 
-    <a href="./Carrinho.html"> <img class="foto-coluna4" src="https://source.unsplash.com/300x200/?nintendo" alt="..."></a>
+    <a href="#"> <img class="foto-coluna4" src="../img/xbox/xbox 1.jpg" alt="..."></a>
 
-    <a href="./Carrinho.html"> <img class="foto-coluna4" src="https://source.unsplash.com/300x200/?xboxone" alt="..."></a>
+    <a href="#"> <img class="foto-coluna4" src="../img/nintendo/nintendo 3.jpg" alt="..."></a>
 
-    <a href="./Carrinho.html"> <img class="foto-coluna4" src="https://source.unsplash.com/300x200/?xboxone" alt="..."></a>
+    <a href="#"> <img class="foto-coluna4" src="../img/ps5/ps5 6.jpg" alt="..."></a>
 
-    <a href="./Carrinho.html"> <img class="foto-coluna4" src="https://source.unsplash.com/300x200/?ps5" alt="..."></a>
+    <a href="#"> <img class="foto-coluna4" src="../img/ps4/ps4  28.jpg" alt="..."></a>
 
-    <a href="./Carrinho.html"> <img class="foto-coluna4" src="https://source.unsplash.com/300x200/?nintendo" alt="..."></a>
+    <a href="#"> <img class="foto-coluna4" src="../img/ps4/ps4 11.png" alt="..."></a>
 
-    <a href="./Carrinho.html"> <img class="foto-coluna4" src="https://source.unsplash.com/300x200/?xboxone" alt="..."></a>
+    <a href="#"> <img class="foto-coluna4" src="../img/ps4/ps4 9.png" alt="..."></a>
 
-    <a href="./Carrinho.html"> <img class="foto-coluna4" src="https://source.unsplash.com/300x200/?xboxone" alt="..."></a>
+    <a href="#"> <img class="foto-coluna4" src="../img/xbox/xbox 15.jpg" alt="..."></a>
 
-    <a href="./Carrinho.html"> <img class="foto-coluna4" src="https://source.unsplash.com/300x200/?ps5" alt="..."></a>
+    <a href="#"> <img class="foto-coluna4" src="../img/nintendo/nintendo 7.jpg" alt="..."></a>
 
-    <a href="./Carrinho.html"> <img class="foto-coluna4" src="https://source.unsplash.com/300x200/?nintendo" alt="..."></a>
+    <a href="#"> <img class="foto-coluna4" src="../img/ps4/ps4 11.png" alt="..."></a>
 
-    <a href="./Carrinho.html"> <img class="foto-coluna4" src="https://source.unsplash.com/300x200/?xboxone" alt="..."></a>
+    <a href="#"> <img class="foto-coluna4" src="../img/ps4/ps4 10.png" alt="..."></a>
 
-    <a href="./Carrinho.html"> <img class="foto-coluna4" src="https://source.unsplash.com/300x200/?xboxone" alt="..."></a>
+    <a href="#"> <img class="foto-coluna4" src="../img/ps5/ps5 5.jpg" alt="..."></a>
+
+    <a href="#"> <img class="foto-coluna4" src="../img/xbox/xbox 5.jpg" alt="..."></a>
 
     <br>
+
     <footer>
-        <br>
+
         <div class="texto-rodape">
             <p>Games Ltda</p>
             <p>Desenvolvido por Willian</p>
-
 
             <a href="https://www.youtube.com/"><img src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/50/000000/external-youtube-multimedia-prettycons-lineal-color-prettycons.png" height="30px" width="30px" /></a>
             <a href="https://www.whatsapp.com/?lang=pt_br"><img src="https://img.icons8.com/color/48/000000/whatsapp--v2.png" height="30px" width="30px" /></a>
